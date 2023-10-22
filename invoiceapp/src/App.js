@@ -7,14 +7,14 @@ function App() {
   return (
     <>
 
-    <main className="m-5 p-5 lg:mx-w-xl lg:mx-auto bg-white">
+    <main className="m-5 p-5 xl:max-w-4xl xl:mx-auto bg-white">
       {/* Header */}
-      <header className="flex flex-col items-center justify-center mb-5">
+      <header className="flex flex-col items-center justify-center mb-5 xl:justify-between xl:flex-row">
         <div>
           <h2 className="font-bold uppercase tracking-wide text-4xl">Invoicer </h2>
         </div>
         <div>
-          <ul className="flex items-center justify-between flex-wrap">
+          <ul className="flex items-end justify-end flex-wrap">
             <li><button className="btn btn-print"onClick={handlePrint}>Print</button></li>
             <li><button className="btn btn-send">Send</button></li>
             <li><button className="btn btn-download">Download</button></li>
@@ -53,14 +53,16 @@ function App() {
       </section>
       {/*end of notes*/}
       {/*footer*/}
-      <ul className="flex items-center justify-center">
-        <li>Your name:</li>
-        <li>Your email:</li>
-        <li>Phone no.:</li>
-        <li>Account holder's name:</li>
-        <li>Account no.:</li>
-        <li>Website:</li>
+      <footer>
+      <ul className="flex flex-wrap items-center justify-center">
+        <li><span className="font-bold ">Your name:</span>Harsh Raut</li>
+        <li><span className="font-bold ">Your email:</span>rautharsh.00@gmail.com</li>
+        <li><span className="font-bold ">Phone no.</span>:9359719200</li>
+        <li><span className="font-bold ">Account holder's</span> :Harsh Raut </li>
+        <li><span className="font-bold ">Account no.</span>: 3245 4536 6745</li>
+        <li><span className="font-bold ">Website: </span>abc.com</li>
         </ul>
+        </footer>
       {/*end of footer*/}
 
     </main>
